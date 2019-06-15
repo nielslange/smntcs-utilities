@@ -2,7 +2,7 @@
 
 Contributors: nielslange
 Donate link:
-Tags: Utilities
+Tags: Utilities, Remove ads
 Requires at least: 3.4
 Tested up to: 5.2
 Stable tag: 1.0
@@ -10,11 +10,11 @@ Requires PHP: 5.6
 License: GPL2+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-🔧 A collection of custom snippets to unclutter the WordPress dashboard.
+🔧 A collection of custom snippets to unclutter the dashboard.
 
 == Description ==
 
-🔧 A collection of custom snippets to unclutter the WordPress dashboard.
+🔧 A collection of custom snippets to unclutter the dashboard.
 
 == Installation ==
 

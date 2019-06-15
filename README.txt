@@ -6,8 +6,9 @@ Tags: Utilities
 Requires at least: 3.4
 Tested up to: 5.2
 Stable tag: 1.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Requires PHP: 5.6
+License: GPL2+
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 🔧 A collection of custom snippets to unclutter the WordPress dashboard.
 
@@ -17,7 +18,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Installation ==
 
-1. Upload 'smntcs-utilities' to the '/wp-content/plugins/' directory
+1. Upload 'smntcs-utilitiessmntcs-utilities' to the '/wp-content/plugins/' directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Purpose ==

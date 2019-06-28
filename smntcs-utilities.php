@@ -5,7 +5,7 @@
  * Description: 🔧 A collection of custom snippets to unclutter the WordPress dashboard.
  * Author: Niels Lange
  * Author URI: https://nielslange.de/
- * Version: 1.0
+ * Version: 1.1
  * Text Domain: smntcs-utilities
  * Domain Path: /languages
  *
@@ -43,5 +43,26 @@ add_filter( 'jetpack_sharing_counts', '__return_false', 99 );
 add_filter( 'jetpack_implode_frontend_css', '__return_false', 99 );
 
 // Yoast
-remove_submenu_page( 'wpseo_dashboard', 'wpseo_courses' );
-remove_meta_box( 'wpseo-dashboard-overview', 'dashboard', 'side' );
+add_action( 'wp_dashboard_setup', 'smntcs_remove_yoast_courses' );
+function smntcs_remove_yoast_courses() {
+	remove_submenu_page( 'wpseo_dashboard', 'wpseo_courses' );
+}
+
+add_action( 'wp_dashboard_setup', 'smntcs_remove_yoast_dashboard' );
+function smntcs_remove_yoast_dashboard() {
+	remove_meta_box( 'wpseo-dashboard-overview', 'dashboard', 'advanced' );
+	remove_meta_box( 'wpseo-dashboard-overview', 'dashboard', 'normal' );
+	remove_meta_box( 'wpseo-dashboard-overview', 'dashboard', 'side' );
+}
+
+add_action( 'admin_head', 'smntcs_remove_yoast_ads' );
+function smntcs_remove_yoast_ads() { ?>
+	<style>
+		.yoast_premium_upsell_admin_block { display: none; }
+		body.toplevel_page_wpseo_dashboard #sidebar-container,
+		body.seo_page_wpseo_titles #sidebar-container,
+		body.seo_page_wpseo_search_console #sidebar-container,
+		body.seo_page_wpseo_social #sidebar-container,
+		body.seo_page_wpseo_tools #sidebar-container { display: none; }
+  </style>
+<?php }

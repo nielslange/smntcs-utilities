@@ -5,7 +5,7 @@
  * Description: A collection of custom snippets to unclutter the WordPress dashboard.
  * Author: Niels Lange
  * Author URI: https://nielslange.de/
- * Version: 1.1
+ * Version: 1.2
  * Text Domain: smntcs-utilities
  * Domain Path: /languages
  * License: GPL3+

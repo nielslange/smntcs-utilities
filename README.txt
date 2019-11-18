@@ -4,8 +4,8 @@ Contributors: nielslange
 Donate link:
 Tags: Utilities, Remove ads
 Requires at least: 3.4
-Stable tag: 1.1
-Tested up to: 5.2
+Stable tag: 1.2
+Tested up to: 5.3
 Requires PHP: 5.6
 License: GPL2+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -29,8 +29,14 @@ A collection of custom snippets to declutter the dashboard.
 
 == Changelog ==
 
+= 1.2 =
+
+* Test up to 5.3
+
 = 1.1 =
+
 * Remove Yoast SEO sidebar ads
 
 = 1.0 =
+
 * Initial release

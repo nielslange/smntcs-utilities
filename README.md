@@ -28,6 +28,10 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-utilities/.
 
 ## Changelog
 
+### 1.2
+
+* Test up to 5.3
+
 ### 1.1
 
 * Remove Yoast SEO sidebar ads

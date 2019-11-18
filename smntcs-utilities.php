@@ -18,50 +18,76 @@
  * @license    http://www.gnu.org/licenses/gpl.txt GNU General Public License version 3
  */
 
- /******************************************************************************
-	* 
-  * Table of contents
-	*
-	* All in One WP Migration
-	* Jetpack
-	* Yoast
-	* 
-  *****************************************************************************/
+/*******************************************************************************
+ *
+ * Table of contents
+ *
+ * All in One WP Migration
+ * Jetpack
+ * Yoast
+ ******************************************************************************/
 
 // Avoid direct plugin access.
 if ( ! defined( 'ABSPATH' ) ) {
 	die( '¯\_(ツ)_/¯' );
 }
 
-// All in One WP Migration
-add_action( 'admin_head', 'smntcs_remove_ai1wm_ads' );
+/**
+ * All in One WP Migration
+ *
+ * @since 1.0.0
+ * @return void
+ */
 function smntcs_remove_ai1wm_ads() { ?>
 	<style>
 		.ai1wm-row { margin-right: 0; }
 		.ai1wm-right { display: none; }
-  </style>
-<?php }
+	</style>
+	<?php
+}
+add_action( 'admin_head', 'smntcs_remove_ai1wm_ads' );
 
-// Jetpack
+/**
+ * Jetpack
+ *
+ * @since 1.0.0
+ */
 add_filter( 'jetpack_just_in_time_msgs', '__return_false', 99 );
 add_filter( 'jetpack_sharing_counts', '__return_false', 99 );
 add_filter( 'jetpack_implode_frontend_css', '__return_false', 99 );
 
-// Yoast
-add_action( 'wp_dashboard_setup', 'smntcs_remove_yoast_courses' );
+/**
+ * Yoast » Remove courses
+ *
+ * @since 1.0.0
+ * @return void
+ */
 function smntcs_remove_yoast_courses() {
 	remove_submenu_page( 'wpseo_dashboard', 'wpseo_courses' );
 }
+add_action( 'wp_dashboard_setup', 'smntcs_remove_yoast_courses' );
 
-add_action( 'wp_dashboard_setup', 'smntcs_remove_yoast_dashboard' );
+/**
+ * Yoast » Remove dashboard
+ *
+ * @since 1.0.0
+ * @return void
+ */
 function smntcs_remove_yoast_dashboard() {
 	remove_meta_box( 'wpseo-dashboard-overview', 'dashboard', 'advanced' );
 	remove_meta_box( 'wpseo-dashboard-overview', 'dashboard', 'normal' );
 	remove_meta_box( 'wpseo-dashboard-overview', 'dashboard', 'side' );
 }
+add_action( 'wp_dashboard_setup', 'smntcs_remove_yoast_dashboard' );
 
-add_action( 'admin_head', 'smntcs_remove_yoast_ads' );
-function smntcs_remove_yoast_ads() { ?>
+/**
+ * Yoast » Remove ads
+ *
+ * @since 1.0.0
+ * @return void
+ */
+function smntcs_remove_yoast_ads() {
+	?>
 	<style>
 		.yoast_premium_upsell_admin_block { display: none; }
 		body.toplevel_page_wpseo_dashboard #sidebar-container,
@@ -69,5 +95,7 @@ function smntcs_remove_yoast_ads() { ?>
 		body.seo_page_wpseo_search_console #sidebar-container,
 		body.seo_page_wpseo_social #sidebar-container,
 		body.seo_page_wpseo_tools #sidebar-container { display: none; }
-  </style>
-<?php }
+	</style>
+	<?php
+}
+add_action( 'admin_head', 'smntcs_remove_yoast_ads' );

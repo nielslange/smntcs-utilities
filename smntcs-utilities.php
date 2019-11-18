@@ -2,26 +2,31 @@
 /**
  * Plugin Name: SMNTCS Utilities
  * Plugin URI:
- * Description: 🔧 A collection of custom snippets to unclutter the WordPress dashboard.
+ * Description: A collection of custom snippets to unclutter the WordPress dashboard.
  * Author: Niels Lange
  * Author URI: https://nielslange.de/
  * Version: 1.1
  * Text Domain: smntcs-utilities
  * Domain Path: /languages
+ * License: GPL3+
+ * License URI: http://www.gnu.org/licenses/gpl.txt
  *
- * License: GPL2+
- * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
- *
- * @package SMNTCS
+ * @category   Plugin
+ * @package    WordPress
+ * @subpackage SMNTCS WooCommerce Quantity Buttons
+ * @author     Niels Lange <info@nielslange.de>
+ * @license    http://www.gnu.org/licenses/gpl.txt GNU General Public License version 3
  */
 
- /*
+ /******************************************************************************
+	* 
   * Table of contents
 	*
 	* All in One WP Migration
 	* Jetpack
 	* Yoast
-  */
+	* 
+  *****************************************************************************/
 
 // Avoid direct plugin access.
 if ( ! defined( 'ABSPATH' ) ) {

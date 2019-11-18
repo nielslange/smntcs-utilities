@@ -1,0 +1,26 @@
+{
+	"name": "smntcs-utilities",
+	"version": "1.0.0",
+	"description": "A collection of custom snippets to unclutter the WordPress dashboard.",
+	"author": "Niels Lange",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"Plugin",
+		"SMNTCS Utilities"
+	],
+	"homepage": "https://github.com/nielslange/smntcs-utilities#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nielslange/smntcs-utilities.git"
+	},
+	"bugs": {
+		"url": "https://github.com/nielslange/smntcs-utilities/issues"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^5.0.0"
+	},
+	"scripts": {
+		"lint:pkg-json": "wp-scripts lint-pkg-json"
+	}
+}

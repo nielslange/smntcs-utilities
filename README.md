@@ -22,6 +22,10 @@ A collection of custom snippets to unclutter the WordPress dashboard.
 * Remove Jetpack ads
 * Remove Yoast SEO ads
 
+## Plugin page
+
+You can find the plugin on https://wordpress.org/plugins/smntcs-utilities/.
+
 ## Changelog
 
 ### 1.1

@@ -89,6 +89,7 @@ add_action( 'wp_dashboard_setup', 'smntcs_remove_yoast_dashboard' );
 function smntcs_remove_yoast_ads() {
 	?>
 	<style>
+		.yoast_bf_sale,
 		.yoast_premium_upsell_admin_block { display: none; }
 		body.toplevel_page_wpseo_dashboard #sidebar-container,
 		body.seo_page_wpseo_titles #sidebar-container,

@@ -4,7 +4,7 @@ Contributors: nielslange
 Donate link:
 Tags: Utilities, Remove ads
 Requires at least: 3.4
-Stable tag: 1.2
+Stable tag: 1.3
 Tested up to: 5.3
 Requires PHP: 5.6
 License: GPL2+
@@ -28,6 +28,10 @@ A collection of custom snippets to declutter the dashboard.
 * Remove Yoast SEO ads
 
 == Changelog ==
+
+= 1.3 =
+
+* Remove Yoast SEO Black Friday banner
 
 = 1.2 =
 

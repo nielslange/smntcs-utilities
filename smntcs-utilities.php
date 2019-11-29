@@ -5,7 +5,7 @@
  * Description: A collection of custom snippets to unclutter the WordPress dashboard.
  * Author: Niels Lange
  * Author URI: https://nielslange.de/
- * Version: 1.2
+ * Version: 1.3
  * Text Domain: smntcs-utilities
  * Domain Path: /languages
  * License: GPL3+
@@ -13,7 +13,7 @@
  *
  * @category   Plugin
  * @package    WordPress
- * @subpackage SMNTCS WooCommerce Quantity Buttons
+ * @subpackage SMNTCS Utilities
  * @author     Niels Lange <info@nielslange.de>
  * @license    http://www.gnu.org/licenses/gpl.txt GNU General Public License version 3
  */
@@ -90,7 +90,7 @@ function smntcs_remove_yoast_ads() {
 	?>
 	<style>
 		.yoast_bf_sale,
-		.yoast_premium_upsell_admin_block { display: none; }
+		.yoast_premium_upsell_admin_block, 
 		body.toplevel_page_wpseo_dashboard #sidebar-container,
 		body.seo_page_wpseo_titles #sidebar-container,
 		body.seo_page_wpseo_search_console #sidebar-container,

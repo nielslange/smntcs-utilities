@@ -28,18 +28,23 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-utilities/.
 
 ## Changelog
 
-### 1.3
+### 1.4 (2021.01.08)
+
+* Test up to WordPress 5.6
+* Remove Yoast SEO upsell ads
+
+### 1.3 (2019.11.29)
 
 * Remove Yoast SEO Black Friday banner
 
-### 1.2
+### 1.2 (2019.11.19)
 
 * Test up to 5.3
 
-### 1.1
+### 1.1 (2019.06.28)
 
 * Remove Yoast SEO sidebar ads
 
-### 1.0
+### 1.0 (2019.06.15)
 
 * Initial release

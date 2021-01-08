@@ -4,8 +4,8 @@ Contributors: nielslange
 Donate link:
 Tags: Utilities, Remove ads
 Requires at least: 3.4
-Stable tag: 1.3
-Tested up to: 5.3
+Stable tag: 1.4
+Tested up to: 5.6
 Requires PHP: 5.6
 License: GPL2+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -29,18 +29,23 @@ A collection of custom snippets to declutter the dashboard.
 
 == Changelog ==
 
-= 1.3 =
+= 1.4 (2021.01.08) =
+
+* Test up to WordPress 5.6
+* Remove Yoast SEO upsell ads
+
+= 1.3 (2019.11.29) =
 
 * Remove Yoast SEO Black Friday banner
 
-= 1.2 =
+= 1.2 (2019.11.19) =
 
 * Test up to 5.3
 
-= 1.1 =
+= 1.1 (2019.06.28) =
 
 * Remove Yoast SEO sidebar ads
 
-= 1.0 =
+= 1.0 (2019.06.15) =
 
 * Initial release

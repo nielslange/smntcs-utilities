@@ -5,7 +5,10 @@
  * Description: A collection of custom snippets to unclutter the WordPress dashboard.
  * Author: Niels Lange
  * Author URI: https://nielslange.de/
- * Version: 1.3
+ * Version: 1.4
+ * Requires at least: 3.4
+ * Tested up to: 5.6
+ * Requires PHP: 5.6
  * Text Domain: smntcs-utilities
  * Domain Path: /languages
  * License: GPL3+
@@ -90,6 +93,7 @@ function smntcs_remove_yoast_ads() {
 	?>
 	<style>
 		.yoast_bf_sale,
+		.yoast_premium_upsell,
 		.yoast_premium_upsell_admin_block, 
 		body.toplevel_page_wpseo_dashboard #sidebar-container,
 		body.seo_page_wpseo_titles #sidebar-container,

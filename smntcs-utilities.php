@@ -5,14 +5,14 @@
  * Description: A collection of custom snippets to unclutter the WordPress dashboard.
  * Author: Niels Lange
  * Author URI: https://nielslange.de/
- * Version: 1.4
- * Requires at least: 3.4
- * Tested up to: 5.6
- * Requires PHP: 5.6
  * Text Domain: smntcs-utilities
- * Domain Path: /languages
- * License: GPL3+
- * License URI: http://www.gnu.org/licenses/gpl.txt
+ * Version: 1.5
+ * Stable tag: trunk
+ * Tested up to: 5.8
+ * Requires at least: 3.4
+ * Requires PHP: 7.0
+ * License: GPLv2
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  *
  * @category   Plugin
  * @package    WordPress
@@ -28,15 +28,16 @@
  * All in One WP Migration
  * Jetpack
  * Yoast
+ * - Remove courses
+ * - Remove dashboard
+ * - Remove ads
  ******************************************************************************/
 
 // Avoid direct plugin access.
-if ( ! defined( 'ABSPATH' ) ) {
-	die( '¯\_(ツ)_/¯' );
-}
+defined( 'ABSPATH' ) || exit;
 
 /**
- * All in One WP Migration
+ * Unclutter All in One WP Migration options.
  *
  * @since 1.0.0
  * @return void
@@ -51,7 +52,7 @@ function smntcs_remove_ai1wm_ads() { ?>
 add_action( 'admin_head', 'smntcs_remove_ai1wm_ads' );
 
 /**
- * Jetpack
+ * Unclutter Jetpack options.
  *
  * @since 1.0.0
  */
@@ -60,7 +61,7 @@ add_filter( 'jetpack_sharing_counts', '__return_false', 99 );
 add_filter( 'jetpack_implode_frontend_css', '__return_false', 99 );
 
 /**
- * Yoast » Remove courses
+ * Yoast » Remove courses.
  *
  * @since 1.0.0
  * @return void
@@ -71,7 +72,7 @@ function smntcs_remove_yoast_courses() {
 add_action( 'wp_dashboard_setup', 'smntcs_remove_yoast_courses' );
 
 /**
- * Yoast » Remove dashboard
+ * Yoast » Remove dashboard.
  *
  * @since 1.0.0
  * @return void
@@ -84,7 +85,7 @@ function smntcs_remove_yoast_dashboard() {
 add_action( 'wp_dashboard_setup', 'smntcs_remove_yoast_dashboard' );
 
 /**
- * Yoast » Remove ads
+ * Yoast » Remove ads.
  *
  * @since 1.0.0
  * @return void
@@ -94,7 +95,7 @@ function smntcs_remove_yoast_ads() {
 	<style>
 		.yoast_bf_sale,
 		.yoast_premium_upsell,
-		.yoast_premium_upsell_admin_block, 
+		.yoast_premium_upsell_admin_block,
 		body.toplevel_page_wpseo_dashboard #sidebar-container,
 		body.seo_page_wpseo_titles #sidebar-container,
 		body.seo_page_wpseo_search_console #sidebar-container,

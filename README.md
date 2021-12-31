@@ -18,9 +18,9 @@ A collection of custom snippets to unclutter the WordPress dashboard.
 
 ## Purpose
 
-* Remove All in One WP Migration ads
-* Remove Jetpack ads
-* Remove Yoast SEO ads
+- Remove All in One WP Migration ads
+- Remove Jetpack ads
+- Remove Yoast SEO ads
 
 ## Plugin page
 
@@ -28,23 +28,27 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-utilities/.
 
 ## Changelog
 
+### 1.5 (2021.12.31)
+
+- Test up to WordPress 5.8
+
 ### 1.4 (2021.01.08)
 
-* Test up to WordPress 5.6
-* Remove Yoast SEO upsell ads
+- Test up to WordPress 5.6
+- Remove Yoast SEO upsell ads
 
 ### 1.3 (2019.11.29)
 
-* Remove Yoast SEO Black Friday banner
+- Remove Yoast SEO Black Friday banner
 
 ### 1.2 (2019.11.19)
 
-* Test up to 5.3
+- Test up to 5.3
 
 ### 1.1 (2019.06.28)
 
-* Remove Yoast SEO sidebar ads
+- Remove Yoast SEO sidebar ads
 
 ### 1.0 (2019.06.15)
 
-* Initial release
+- Initial release

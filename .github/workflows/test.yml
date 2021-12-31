@@ -22,12 +22,8 @@ jobs:
           php --version
           ./vendor/bin/phpcs --version
           ./vendor/bin/phplint --version
-          ./vendor/bin/psalm --version
       - name: Run PHP_CodeSniffer
         run: composer phpcs
 
       - name: Run PHPLint
         run: composer phplint
-
-      - name: Run Psalm
-        run: composer psalm

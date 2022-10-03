@@ -35,6 +35,7 @@ class SMNTCS_Utilities {
 	 */
 	public static function init() {
 		add_action( 'admin_init', array( __class__, 'remove_ai1wm_ads' ) );
+		add_action( 'admin_init', array( __class__, 'remove_elementor_ads' ) );
 		add_action( 'admin_init', array( __class__, 'remove_jetpack_ads' ) );
 		add_action( 'admin_init', array( __class__, 'remove_yoast_ads' ) );
 	}
@@ -57,6 +58,16 @@ class SMNTCS_Utilities {
 	 */
 	public static function remove_jetpack_ads() {
 		require_once 'lib/class-jetpack.php';
+	}
+
+	/**
+	 * Remove the Elementor ads.
+	 *
+	 * @return void
+	 * @since 1.6
+	 */
+	public static function remove_elementor_ads() {
+		require_once 'lib/class-elementor.php';
 	}
 
 	/**

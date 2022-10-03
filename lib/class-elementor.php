@@ -25,7 +25,7 @@ class Elementor implements Plugin {
 
 		add_action( 'admin_init', array( __class__, 'remove_submenus' ), 999 );
 		add_action( 'wp_dashboard_setup', array( __class__, 'remove_dashboard' ) );
-		
+
 	}
 
 	/**
@@ -53,10 +53,10 @@ class Elementor implements Plugin {
 	 *
 	 * @since 1.0.0
 	 * @return void
-	 */ 
+	 */
 	public static function remove_submenus() {
 		remove_submenu_page( 'elementor', 'go_elementor_pro' );
-	}	
+	}
 }
 
 Elementor::init();

@@ -28,9 +28,15 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-utilities/.
 
 ## Changelog
 
+### 1.6 (2022.10.03)
+
+- Test up to WP 6.0
+- Remove Elementor ads
+- Remove Smush ads
+
 ### 1.5 (2021.12.31)
 
-- Test up to WP 5.8
+- Test up to WP 5.8.
 
 ### 1.4 (2021.01.08)
 

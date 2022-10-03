@@ -1,6 +1,6 @@
 {
 	"name": "nielslange/smntcs-utilities",
-	"description": "A collection of custom snippets to unclutter the WordPress dashboard.",
+	"description": "A collection of custom snippets to hide upsell ads within WP Admin.",
 	"homepage": "https://github.com/nielslange/smntcs-utilities",
 	"type": "wordpress-plugin",
 	"keywords": [
@@ -27,8 +27,8 @@
 		"wp-coding-standards/wpcs": "^2.3"
 	},
 	"scripts": {
-		"phpcbf": "phpcbf --standard=phpcs.dist.xml .",
-		"phpcs": "phpcs --standard=phpcs.dist.xml .",
+		"phpcbf": "phpcbf --standard=phpcs.xml .",
+		"phpcs": "phpcs --standard=phpcs.xml .",
 		"phplint": "phplint"
 	},
 	"config": {

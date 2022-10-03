@@ -9,7 +9,7 @@
 [![Plugin Version](https://img.shields.io/wordpress/plugin/v/smntcs-utilities.svg)](https://wordpress.org/plugins/smntcs-utilities/)
 [![Tag Version](https://img.shields.io/github/tag/nielslange/smntcs-utilities.svg)](https://wordpress.org/plugins/smntcs-utilities/)
 
-A collection of custom snippets to unclutter the WordPress dashboard.
+A collection of custom snippets to hide upsell ads within WP Admin.
 
 ## Installation
 
@@ -28,13 +28,19 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-utilities/.
 
 ## Changelog
 
+### 1.6 (2022.10.03)
+
+- Test up to WP 6.0
+- Remove Elementor ads
+- Remove Smush ads
+
 ### 1.5 (2021.12.31)
 
-- Test up to WordPress 5.8
+- Test up to WP 5.8.
 
 ### 1.4 (2021.01.08)
 
-- Test up to WordPress 5.6
+- Test up to WP 5.6
 - Remove Yoast SEO upsell ads
 
 ### 1.3 (2019.11.29)
@@ -43,7 +49,7 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-utilities/.
 
 ### 1.2 (2019.11.19)
 
-- Test up to 5.3
+- Test up to WP 5.3
 
 ### 1.1 (2019.06.28)
 

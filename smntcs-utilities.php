@@ -1,107 +1,100 @@
 <?php
 /**
- * Plugin Name: SMNTCS Utilities
- * Plugin URI:
- * Description: A collection of custom snippets to unclutter the WordPress dashboard.
- * Author: Niels Lange
- * Author URI: https://nielslange.de/
- * Text Domain: smntcs-utilities
- * Version: 1.5
- * Stable tag: trunk
- * Tested up to: 5.8
+ * Plugin Name:       SMNTCS Utilities
+ * Plugin URI:        https://github.com/nielslange/smntcs-utilities
+ * Description:       A collection of custom snippets to unclutter the WordPress dashboard.
+ * Author:            Niels Lange
+ * Author URI:        https://nielslange.com/
+ * Text Domain:       smntcs-utilities
+ * Version:           1.6
+ * Tested up to:      6.0
  * Requires at least: 3.4
- * Requires PHP: 7.0
- * License: GPLv2
- * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * Requires PHP:      5.6
+ * License:           GPLv3
+ * License URI:       https://www.gnu.org/licenses/gpl-3.0.html
  *
- * @category   Plugin
- * @package    WordPress
- * @subpackage SMNTCS Utilities
- * @author     Niels Lange <info@nielslange.de>
- * @license    http://www.gnu.org/licenses/gpl.txt GNU General Public License version 3
+ * @package SMNTCS_Utilities
  */
 
-/*******************************************************************************
- *
- * Table of contents
- *
- * All in One WP Migration
- * Jetpack
- * Yoast
- * - Remove courses
- * - Remove dashboard
- * - Remove ads
- ******************************************************************************/
-
-// Avoid direct plugin access.
 defined( 'ABSPATH' ) || exit;
 
-/**
- * Unclutter All in One WP Migration options.
- *
- * @since 1.0.0
- * @return void
- */
-function smntcs_remove_ai1wm_ads() { ?>
-	<style>
-		.ai1wm-row { margin-right: 0; }
-		.ai1wm-right { display: none; }
-	</style>
-	<?php
-}
-add_action( 'admin_head', 'smntcs_remove_ai1wm_ads' );
+require_once 'lib/class-plugin.php';
 
 /**
- * Unclutter Jetpack options.
+ * SMNTCS_Utilities main class.
  *
- * @since 1.0.0
+ * @since 1.6
  */
-add_filter( 'jetpack_just_in_time_msgs', '__return_false', 99 );
-add_filter( 'jetpack_sharing_counts', '__return_false', 99 );
-add_filter( 'jetpack_implode_frontend_css', '__return_false', 99 );
+class SMNTCS_Utilities {
 
-/**
- * Yoast » Remove courses.
- *
- * @since 1.0.0
- * @return void
- */
-function smntcs_remove_yoast_courses() {
-	remove_submenu_page( 'wpseo_dashboard', 'wpseo_courses' );
-}
-add_action( 'wp_dashboard_setup', 'smntcs_remove_yoast_courses' );
+	/**
+	 * Initialize the plugin.
+	 *
+	 * @return void
+	 * @since 1.6
+	 */
+	public static function init() {
+		add_action( 'admin_init', array( __class__, 'remove_ai1wm_ads' ) );
+		add_action( 'admin_init', array( __class__, 'remove_elementor_ads' ) );
+		add_action( 'admin_init', array( __class__, 'remove_jetpack_ads' ) );
+		add_action( 'admin_init', array( __class__, 'remove_smush_ads' ) );
+		add_action( 'admin_init', array( __class__, 'remove_yoast_ads' ) );
+	}
 
-/**
- * Yoast » Remove dashboard.
- *
- * @since 1.0.0
- * @return void
- */
-function smntcs_remove_yoast_dashboard() {
-	remove_meta_box( 'wpseo-dashboard-overview', 'dashboard', 'advanced' );
-	remove_meta_box( 'wpseo-dashboard-overview', 'dashboard', 'normal' );
-	remove_meta_box( 'wpseo-dashboard-overview', 'dashboard', 'side' );
-}
-add_action( 'wp_dashboard_setup', 'smntcs_remove_yoast_dashboard' );
+	/**
+	 * Remove the All-in-One WP Migration ads.
+	 *
+	 * @link https://wordpress.org/plugins/all-in-one-wp-migration/
+	 * @return void
+	 * @since 1.6
+	 */
+	public static function remove_ai1wm_ads() {
+		require_once 'lib/class-all-in-one-wp-migration.php';
+	}
 
-/**
- * Yoast » Remove ads.
- *
- * @since 1.0.0
- * @return void
- */
-function smntcs_remove_yoast_ads() {
-	?>
-	<style>
-		.yoast_bf_sale,
-		.yoast_premium_upsell,
-		.yoast_premium_upsell_admin_block,
-		body.toplevel_page_wpseo_dashboard #sidebar-container,
-		body.seo_page_wpseo_titles #sidebar-container,
-		body.seo_page_wpseo_search_console #sidebar-container,
-		body.seo_page_wpseo_social #sidebar-container,
-		body.seo_page_wpseo_tools #sidebar-container { display: none; }
-	</style>
-	<?php
+	/**
+	 * Remove the Elementor ads.
+	 *
+	 * @link https://wordpress.org/plugins/elementor/
+	 * @return void
+	 * @since 1.6
+	 */
+	public static function remove_elementor_ads() {
+		require_once 'lib/class-elementor.php';
+	}
+
+	/**
+	 * Remove the Jetpack ads.
+	 *
+	 * @link https://wordpress.org/plugins/jetpack/
+	 * @return void
+	 * @since 1.6
+	 */
+	public static function remove_jetpack_ads() {
+		require_once 'lib/class-jetpack.php';
+	}
+
+	/**
+	 * Remove the Smush ads.
+	 *
+	 * @link https://wordpress.org/plugins/wp-smushit/
+	 * @return void
+	 * @since 1.6
+	 */
+	public static function remove_smush_ads() {
+		require_once 'lib/class-smush.php';
+	}
+
+	/**
+	 * Remove the Yoast ads.
+	 *
+	 * @link https://wordpress.org/plugins/wordpress-seo/
+	 * @return void
+	 * @since 1.6
+	 */
+	public static function remove_yoast_ads() {
+		require_once 'lib/class-yoast.php';
+	}
 }
-add_action( 'admin_head', 'smntcs_remove_yoast_ads' );
+
+SMNTCS_Utilities::init();

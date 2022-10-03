@@ -1,7 +1,7 @@
 {
 	"name": "smntcs-utilities",
 	"version": "1.0.0",
-	"description": "A collection of custom snippets to unclutter the WordPress dashboard.",
+	"description": "A collection of custom snippets to hide upsell ads within WP Admin.",
 	"author": "Niels Lange",
 	"license": "GPL-2.0-or-later",
 	"keywords": [

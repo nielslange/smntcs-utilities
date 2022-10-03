@@ -37,12 +37,14 @@ class SMNTCS_Utilities {
 		add_action( 'admin_init', array( __class__, 'remove_ai1wm_ads' ) );
 		add_action( 'admin_init', array( __class__, 'remove_elementor_ads' ) );
 		add_action( 'admin_init', array( __class__, 'remove_jetpack_ads' ) );
+		add_action( 'admin_init', array( __class__, 'remove_smush_ads' ) );
 		add_action( 'admin_init', array( __class__, 'remove_yoast_ads' ) );
 	}
 
 	/**
 	 * Remove the All-in-One WP Migration ads.
 	 *
+	 * @link https://wordpress.org/plugins/all-in-one-wp-migration/
 	 * @return void
 	 * @since 1.6
 	 */
@@ -51,18 +53,9 @@ class SMNTCS_Utilities {
 	}
 
 	/**
-	 * Remove the Jetpack ads.
-	 *
-	 * @return void
-	 * @since 1.6
-	 */
-	public static function remove_jetpack_ads() {
-		require_once 'lib/class-jetpack.php';
-	}
-
-	/**
 	 * Remove the Elementor ads.
 	 *
+	 * @link https://wordpress.org/plugins/elementor/
 	 * @return void
 	 * @since 1.6
 	 */
@@ -71,8 +64,31 @@ class SMNTCS_Utilities {
 	}
 
 	/**
+	 * Remove the Jetpack ads.
+	 *
+	 * @link https://wordpress.org/plugins/jetpack/
+	 * @return void
+	 * @since 1.6
+	 */
+	public static function remove_jetpack_ads() {
+		require_once 'lib/class-jetpack.php';
+	}
+
+	/**
+	 * Remove the Smush ads.
+	 *
+	 * @link https://wordpress.org/plugins/wp-smushit/
+	 * @return void
+	 * @since 1.6
+	 */
+	public static function remove_smush_ads() {
+		require_once 'lib/class-smush.php';
+	}
+
+	/**
 	 * Remove the Yoast ads.
 	 *
+	 * @link https://wordpress.org/plugins/wordpress-seo/
 	 * @return void
 	 * @since 1.6
 	 */

@@ -23,7 +23,7 @@ class Yoast implements Plugin {
 			return;
 		}
 
-		add_action( 'admin_init', array( __class__, 'remove_submenus' ), 9999 );
+		add_action( 'admin_init', array( __class__, 'remove_submenus' ), 999 );
 		add_action( 'admin_head', array( __class__, 'remove_ads' ) );
 		add_action( 'wp_dashboard_setup', array( __class__, 'remove_dashboard' ) );
 	}
@@ -36,30 +36,6 @@ class Yoast implements Plugin {
 	 */
 	public static function is_plugin_active() {
 		return class_exists( 'WPSEO_Admin' );
-	}
-
-	/**
-	 * Remove submenu(s).
-	 *
-	 * @since 1.0.0
-	 * @return void
-	 */
-	public static function remove_submenus() {
-		remove_submenu_page( 'wpseo_dashboard', 'wpseo_courses' );
-		remove_submenu_page( 'wpseo_dashboard', 'wpseo_licenses' );
-		remove_submenu_page( 'wpseo_dashboard', 'wpseo_redirects' );
-		remove_submenu_page( 'wpseo_dashboard', 'wpseo_workouts' );
-
-	}
-
-	/**
-	 * Remove dashboard widget(s).
-	 *
-	 * @since 1.0.0
-	 * @return void
-	 */
-	public static function remove_dashboard() {
-		remove_meta_box( 'wpseo-dashboard-overview', 'dashboard', 'advanced' );
 	}
 
 	/**
@@ -83,6 +59,29 @@ class Yoast implements Plugin {
 			.wpseo_content_wrapper .paper.tab-block.search-appearance { max-width: 100%; }
 		</style>
 		<?php
+	}
+
+	/**
+	 * Remove dashboard widget(s).
+	 *
+	 * @since 1.0.0
+	 * @return void
+	 */
+	public static function remove_dashboard() {
+		remove_meta_box( 'wpseo-dashboard-overview', 'dashboard', 'advanced' );
+	}
+
+	/**
+	 * Remove submenu(s).
+	 *
+	 * @since 1.0.0
+	 * @return void
+	 */
+	public static function remove_submenus() {
+		remove_submenu_page( 'wpseo_dashboard', 'wpseo_courses' );
+		remove_submenu_page( 'wpseo_dashboard', 'wpseo_licenses' );
+		remove_submenu_page( 'wpseo_dashboard', 'wpseo_redirects' );
+		remove_submenu_page( 'wpseo_dashboard', 'wpseo_workouts' );
 	}
 }
 

@@ -28,6 +28,10 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-utilities/.
 
 ## Changelog
 
+### 1.7 (2022.10.04)
+
+- Fix critical error due to duplicate class name
+
 ### 1.6 (2022.10.03)
 
 - Test up to WP 6.0

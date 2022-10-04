@@ -10,7 +10,7 @@
  *
  * @since 1.6.0
  */
-class Elementor implements Plugin {
+class SMNTCS_Elementor implements Plugin {
 
 	/**
 	 * Initialize the class.
@@ -59,4 +59,4 @@ class Elementor implements Plugin {
 	}
 }
 
-Elementor::init();
+SMNTCS_Elementor::init();

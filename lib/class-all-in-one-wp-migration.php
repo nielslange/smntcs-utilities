@@ -10,7 +10,7 @@
  *
  * @since 1.6.0
  */
-class All_In_One_WP_Migration implements Plugin {
+class SMNTCS_All_In_One_WP_Migration implements Plugin {
 
 	/**
 	 * Initialize the class.
@@ -52,4 +52,4 @@ class All_In_One_WP_Migration implements Plugin {
 	}
 }
 
-All_in_One_WP_Migration::init();
+SMNTCS_All_in_One_WP_Migration::init();

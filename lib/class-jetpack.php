@@ -10,7 +10,7 @@
  *
  * @since 1.6.0
  */
-class Jetpack implements Plugin {
+class SMNTCS_Jetpack implements Plugin {
 
 	/**
 	 * Initialize the class.
@@ -39,4 +39,4 @@ class Jetpack implements Plugin {
 	}
 }
 
-Jetpack::init();
+SMNTCS_Jetpack::init();

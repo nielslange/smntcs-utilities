@@ -10,7 +10,7 @@
  *
  * @since 1.6.0
  */
-class Smush implements Plugin {
+class SMNTCS_Smush implements Plugin {
 
 	/**
 	 * Initialize the class.
@@ -62,4 +62,4 @@ class Smush implements Plugin {
 	}
 }
 
-Smush::init();
+SMNTCS_Smush::init();

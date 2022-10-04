@@ -10,7 +10,7 @@
  *
  * @since 1.6.0
  */
-class Yoast implements Plugin {
+class SMNTCS_Yoast implements Plugin {
 
 	/**
 	 * Initialize the class.
@@ -85,4 +85,4 @@ class Yoast implements Plugin {
 	}
 }
 
-Yoast::init();
+SMNTCS_Yoast::init();

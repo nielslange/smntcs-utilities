@@ -1,8 +1,8 @@
 === SMNTCS Utilities ===
 
 Contributors:      nielslange
-Tags:              Utilities, remove ads, remove bloat, unbloater, 
-Stable tag:        1.6
+Tags:              Utilities, remove ads, remove bloat, unbloater,
+Stable tag:        1.7
 Tested up to:      6.0
 Requires at least: 3.4
 Requires PHP:      5.6
@@ -29,6 +29,10 @@ A collection of custom snippets to hide upsell ads within WP Admin.
 - Remove Yoast SEO ads
 
 == Changelog ==
+
+= 1.7 (2022.10.04) =
+
+- Fix critical error due to duplicate class name
 
 = 1.6 (2022.10.03) =
 

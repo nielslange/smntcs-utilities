@@ -1,13 +1,13 @@
 === SMNTCS Utilities ===
 
-Contributors:      nielslange
-Tags:              Utilities, remove ads, remove bloat, unbloater,
-Stable tag:        1.7
-Tested up to:      6.0
-Requires at least: 3.4
-Requires PHP:      5.6
-License:           GPLv3
-License URI:       http://www.gnu.org/licenses/gpl-3.0.html
+Contributors:       nielslange
+Tags:               Utilities, remove ads, remove bloat, unbloater
+Stable tag:         1.8
+Tested up to:       6.1
+Requires PHP:       5.6
+Requires at least:  3.4
+License:            GPL v2 or later
+License URI:        https://www.gnu.org/licenses/gpl-2.0.html
 
 A collection of custom snippets to hide upsell ads within WP Admin.
 
@@ -29,6 +29,10 @@ A collection of custom snippets to hide upsell ads within WP Admin.
 - Remove Yoast SEO ads
 
 == Changelog ==
+
+= 1.8 (2022.10.04) =
+
+- Test up to WP 6.1
 
 = 1.7 (2022.10.04) =
 

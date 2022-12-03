@@ -1,17 +1,16 @@
 <?php
 /**
- * Plugin Name:       SMNTCS Utilities
- * Plugin URI:        https://github.com/nielslange/smntcs-utilities
- * Description:       A collection of custom snippets to unclutter the WordPress dashboard.
- * Author:            Niels Lange
- * Author URI:        https://nielslange.com/
- * Text Domain:       smntcs-utilities
- * Version:           1.7
- * Tested up to:      6.0
- * Requires at least: 3.4
- * Requires PHP:      5.6
- * License:           GPLv3
- * License URI:       https://www.gnu.org/licenses/gpl-3.0.html
+ * Plugin Name:           SMNTCS Utilities
+ * Plugin URI:            https://github.com/nielslange/smntcs-utilities
+ * Description:           A collection of custom snippets to unclutter the WordPress dashboard.
+ * Author:                Niels Lange
+ * Author URI:            https://nielslange.de
+ * Text Domain:           smntcs-utilities
+ * Version:               1.8
+ * Requires PHP:          5.6
+ * Requires at least:     3.4
+ * License:               GPL v2 or later
+ * License URI:           https://www.gnu.org/licenses/gpl-2.0.html
  *
  * @package SMNTCS_Utilities
  */

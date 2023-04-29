@@ -42,7 +42,7 @@ class SMNTCS_All_In_One_WP_Migration implements Plugin {
 	 * @return void
 	 * @since 1.0.0
 	 */
-	public function remove_ai1wm_sidebar_ads() {
+	public static function remove_ai1wm_sidebar_ads() {
 		?>
 		<style>
 			.ai1wm-row { margin-right: 0; }

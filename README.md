@@ -30,6 +30,11 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-utilities/.
 
 ## Changelog
 
+### 1.9 (2023.04.29)
+
+- Test up to WP 6.2
+- Fix critical error regarding AIOWPM
+
 ### 1.8 (2022.10.04)
 
 - Test up to WP 6.1

@@ -18,12 +18,12 @@ class SMNTCS_All_In_One_WP_Migration implements Plugin {
 	 * @return void
 	 * @since 1.6.0
 	 */
-	public static function init() {
+	public function __construct() {
 		if ( ! self::is_plugin_active() ) {
 			return;
 		}
 
-		add_action( 'admin_head', array( __class__, 'remove_ai1wm_sidebar_ads' ) );
+		add_action( 'admin_head', array( $this, 'remove_ai1wm_sidebar_ads' ) );
 	}
 
 	/**
@@ -32,7 +32,7 @@ class SMNTCS_All_In_One_WP_Migration implements Plugin {
 	 * @return bool True if ai1wm is active, false otherwise.
 	 * @since 1.6.0
 	 */
-	public static function is_plugin_active() {
+	public function is_plugin_active() {
 		return class_exists( 'Ai1wm_Main_Controller' );
 	}
 
@@ -42,7 +42,7 @@ class SMNTCS_All_In_One_WP_Migration implements Plugin {
 	 * @return void
 	 * @since 1.0.0
 	 */
-	public static function remove_ai1wm_sidebar_ads() {
+	public function remove_ai1wm_sidebar_ads() {
 		?>
 		<style>
 			.ai1wm-row { margin-right: 0; }
@@ -52,4 +52,4 @@ class SMNTCS_All_In_One_WP_Migration implements Plugin {
 	}
 }
 
-SMNTCS_All_in_One_WP_Migration::init();
+new SMNTCS_All_in_One_WP_Migration();

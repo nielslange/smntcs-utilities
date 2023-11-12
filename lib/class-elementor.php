@@ -18,13 +18,13 @@ class SMNTCS_Elementor implements Plugin {
 	 * @return void
 	 * @since 1.6.0
 	 */
-	public static function init() {
+	public function __construct() {
 		if ( ! self::is_plugin_active() ) {
 			return;
 		}
 
-		add_action( 'admin_init', array( __class__, 'remove_submenus' ), 999 );
-		add_action( 'wp_dashboard_setup', array( __class__, 'remove_dashboard' ) );
+		add_action( 'admin_init', array( $this, 'remove_submenus' ), 999 );
+		add_action( 'wp_dashboard_setup', array( $this, 'remove_dashboard' ) );
 
 	}
 
@@ -34,7 +34,7 @@ class SMNTCS_Elementor implements Plugin {
 	 * @return bool True if Elementor is active, false otherwise.
 	 * @since 1.6.0
 	 */
-	public static function is_plugin_active() {
+	public function is_plugin_active() {
 		return class_exists( 'Elementor' );
 	}
 
@@ -44,7 +44,7 @@ class SMNTCS_Elementor implements Plugin {
 	 * @since 1.0.0
 	 * @return void
 	 */
-	public static function remove_dashboard() {
+	public function remove_dashboard() {
 		remove_meta_box( 'e-dashboard-overview', 'dashboard', 'normal' );
 	}
 
@@ -54,9 +54,9 @@ class SMNTCS_Elementor implements Plugin {
 	 * @since 1.0.0
 	 * @return void
 	 */
-	public static function remove_submenus() {
+	public function remove_submenus() {
 		remove_submenu_page( 'elementor', 'go_elementor_pro' );
 	}
 }
 
-SMNTCS_Elementor::init();
+new SMNTCS_Elementor();

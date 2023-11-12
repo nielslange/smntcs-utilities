@@ -6,7 +6,7 @@
  * Author:                Niels Lange
  * Author URI:            https://nielslange.de
  * Text Domain:           smntcs-utilities
- * Version:               1.9
+ * Version:               2.0
  * Requires PHP:          5.6
  * Requires at least:     3.4
  * License:               GPL v2 or later
@@ -32,12 +32,12 @@ class SMNTCS_Utilities {
 	 * @return void
 	 * @since 1.6
 	 */
-	public static function init() {
-		add_action( 'admin_init', array( __class__, 'remove_ai1wm_ads' ) );
-		add_action( 'admin_init', array( __class__, 'remove_elementor_ads' ) );
-		add_action( 'admin_init', array( __class__, 'remove_jetpack_ads' ) );
-		add_action( 'admin_init', array( __class__, 'remove_smush_ads' ) );
-		add_action( 'admin_init', array( __class__, 'remove_yoast_ads' ) );
+	public function __construct() {
+		add_action( 'admin_init', array( $this, 'remove_ai1wm_ads' ) );
+		add_action( 'admin_init', array( $this, 'remove_elementor_ads' ) );
+		add_action( 'admin_init', array( $this, 'remove_jetpack_ads' ) );
+		add_action( 'admin_init', array( $this, 'remove_smush_ads' ) );
+		add_action( 'admin_init', array( $this, 'remove_yoast_ads' ) );
 	}
 
 	/**
@@ -47,7 +47,7 @@ class SMNTCS_Utilities {
 	 * @return void
 	 * @since 1.6
 	 */
-	public static function remove_ai1wm_ads() {
+	public function remove_ai1wm_ads() {
 		require_once 'lib/class-all-in-one-wp-migration.php';
 	}
 
@@ -58,7 +58,7 @@ class SMNTCS_Utilities {
 	 * @return void
 	 * @since 1.6
 	 */
-	public static function remove_elementor_ads() {
+	public function remove_elementor_ads() {
 		require_once 'lib/class-elementor.php';
 	}
 
@@ -69,7 +69,7 @@ class SMNTCS_Utilities {
 	 * @return void
 	 * @since 1.6
 	 */
-	public static function remove_jetpack_ads() {
+	public function remove_jetpack_ads() {
 		require_once 'lib/class-jetpack.php';
 	}
 
@@ -80,7 +80,7 @@ class SMNTCS_Utilities {
 	 * @return void
 	 * @since 1.6
 	 */
-	public static function remove_smush_ads() {
+	public function remove_smush_ads() {
 		require_once 'lib/class-smush.php';
 	}
 
@@ -91,9 +91,9 @@ class SMNTCS_Utilities {
 	 * @return void
 	 * @since 1.6
 	 */
-	public static function remove_yoast_ads() {
+	public function remove_yoast_ads() {
 		require_once 'lib/class-yoast.php';
 	}
 }
 
-SMNTCS_Utilities::init();
+new SMNTCS_Utilities();

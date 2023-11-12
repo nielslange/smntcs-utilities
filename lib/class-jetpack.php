@@ -18,7 +18,7 @@ class SMNTCS_Jetpack implements Plugin {
 	 * @return void
 	 * @since 1.6.0
 	 */
-	public static function init() {
+	public function __construct() {
 		if ( ! self::is_plugin_active() ) {
 			return;
 		}
@@ -34,9 +34,9 @@ class SMNTCS_Jetpack implements Plugin {
 	 * @return bool True if Jetpack is active, false otherwise.
 	 * @since 1.6.0
 	 */
-	public static function is_plugin_active() {
+	public function is_plugin_active() {
 		return class_exists( 'Jetpack' );
 	}
 }
 
-SMNTCS_Jetpack::init();
+new SMNTCS_Jetpack();

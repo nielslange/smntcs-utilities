@@ -18,14 +18,14 @@ class SMNTCS_Yoast implements Plugin {
 	 * @return void
 	 * @since 1.6.0
 	 */
-	public static function init() {
+	public function __construct() {
 		if ( ! self::is_plugin_active() ) {
 			return;
 		}
 
-		add_action( 'admin_init', array( __class__, 'remove_submenus' ), 999 );
-		add_action( 'admin_head', array( __class__, 'remove_ads' ) );
-		add_action( 'wp_dashboard_setup', array( __class__, 'remove_dashboard' ) );
+		add_action( 'admin_init', array( $this, 'remove_submenus' ), 999 );
+		add_action( 'admin_head', array( $this, 'remove_ads' ) );
+		add_action( 'wp_dashboard_setup', array( $this, 'remove_dashboard' ) );
 	}
 
 	/**
@@ -34,7 +34,7 @@ class SMNTCS_Yoast implements Plugin {
 	 * @return bool True if Yoast is active, false otherwise.
 	 * @since 1.6.0
 	 */
-	public static function is_plugin_active() {
+	public function is_plugin_active() {
 		return class_exists( 'WPSEO_Admin' );
 	}
 
@@ -44,7 +44,7 @@ class SMNTCS_Yoast implements Plugin {
 	 * @since 1.0.0
 	 * @return void
 	 */
-	public static function remove_ads() {
+	public function remove_ads() {
 		?>
 		<style>
 			.yoast_bf_sale,
@@ -67,7 +67,7 @@ class SMNTCS_Yoast implements Plugin {
 	 * @since 1.0.0
 	 * @return void
 	 */
-	public static function remove_dashboard() {
+	public function remove_dashboard() {
 		remove_meta_box( 'wpseo-dashboard-overview', 'dashboard', 'advanced' );
 	}
 
@@ -77,7 +77,7 @@ class SMNTCS_Yoast implements Plugin {
 	 * @since 1.0.0
 	 * @return void
 	 */
-	public static function remove_submenus() {
+	public function remove_submenus() {
 		remove_submenu_page( 'wpseo_dashboard', 'wpseo_courses' );
 		remove_submenu_page( 'wpseo_dashboard', 'wpseo_licenses' );
 		remove_submenu_page( 'wpseo_dashboard', 'wpseo_redirects' );
@@ -85,4 +85,4 @@ class SMNTCS_Yoast implements Plugin {
 	}
 }
 
-SMNTCS_Yoast::init();
+new SMNTCS_Yoast();

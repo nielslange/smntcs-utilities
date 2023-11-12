@@ -18,7 +18,7 @@ interface Plugin {
 	 * @return void
 	 * @since 1.6.0
 	 */
-	public static function init();
+	public function __construct();
 
 	/**
 	 * Check if plugin is active.
@@ -26,5 +26,5 @@ interface Plugin {
 	 * @return bool True if plugin is active, false otherwise.
 	 * @since 1.6.0
 	 */
-	public static function is_plugin_active();
+	public function is_plugin_active();
 }

@@ -1,13 +1,14 @@
 # SMNTCS Utilities
 
 ![Support Level](https://img.shields.io/badge/support-active-green.svg)
-![Build Status](https://api.travis-ci.com/nielslange/smntcs-utilities.svg?branch=trunk)
+![Build Status](https://github.com/nielslange/smntcs-utilities/actions/workflows/test.yml/badge.svg)
 ![GPLv2 License](https://img.shields.io/github/license/nielslange/smntcs-utilities.svg)
 ![Compatible to WordPress version](https://plugintests.com/plugins/smntcs-utilities/wp-badge.svg)
 ![Compatible to PHP version](https://plugintests.com/plugins/smntcs-utilities/php-badge.svg)
 ![Downloads](https://img.shields.io/wordpress/plugin/dt/smntcs-utilities.svg)
 ![Plugin Version](https://img.shields.io/wordpress/plugin/v/smntcs-utilities.svg)
 ![Tag Version](https://img.shields.io/github/tag/nielslange/smntcs-utilities.svg)
+![Deploy to WordPress.org](https://github.com/nielslange/smntcs-utilities/workflows/Deploy%20to%20WordPress.org/badge.svg)
 
 A collection of custom snippets to hide upsell ads within WP Admin.
 

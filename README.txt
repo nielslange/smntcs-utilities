@@ -2,10 +2,10 @@
 
 Contributors:       nielslange
 Tags:               Utilities, remove ads, remove bloat, unbloater
-Stable tag:         2.0
+Stable tag:         2.1
 Tested up to:       6.4
 Requires PHP:       5.6
-Requires at least:  3.4
+Requires at least:  4.6
 License:            GPL v2 or later
 License URI:        https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,18 +30,22 @@ A collection of custom snippets to hide upsell ads within WP Admin.
 
 == Changelog ==
 
+= 2.1 (2024.10.28) =
+
+- Test up to WordPress 6.6
+
 = 2.0 (2023.11.12) =
 
-- Test up to WP 6.4
+- Test up to WordPress 6.4
 
 = 1.9 (2023.04.29) =
 
-- Test up to WP 6.2
+- Test up to WordPress 6.2
 - Fix critical error regarding AIOWPM
 
 = 1.8 (2022.10.04) =
 
-- Test up to WP 6.1
+- Test up to WordPress 6.1
 
 = 1.7 (2022.10.04) =
 
@@ -49,17 +53,17 @@ A collection of custom snippets to hide upsell ads within WP Admin.
 
 = 1.6 (2022.10.03) =
 
-- Test up to WP 6.0
+- Test up to WordPress 6.0
 - Remove Elementor ads
 - Remove Smush ads
 
 = 1.5 (2021.12.31) =
 
-- Test up to WP 5.8
+- Test up to WordPress 5.8
 
 = 1.4 (2021.01.08) =
 
-- Test up to WP 5.6
+- Test up to WordPress 5.6
 - Remove Yoast SEO upsell ads
 
 = 1.3 (2019.11.29) =
@@ -68,7 +72,7 @@ A collection of custom snippets to hide upsell ads within WP Admin.
 
 = 1.2 (2019.11.19) =
 
-- Test up to WP 5.3
+- Test up to WordPress 5.3
 
 = 1.1 (2019.06.28) =
 

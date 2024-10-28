@@ -30,18 +30,22 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-utilities/.
 
 ## Changelog
 
+### 2.1 (2024.10.28)
+
+- Test up to WordPress 6.6
+
 ### 2.0 (2023.11.12)
 
-- Test up to WP 6.4
+- Test up to WordPress 6.4
 
 ### 1.9 (2023.04.29)
 
-- Test up to WP 6.2
+- Test up to WordPress 6.2
 - Fix critical error regarding AIOWPM
 
 ### 1.8 (2022.10.04)
 
-- Test up to WP 6.1
+- Test up to WordPress 6.1
 
 ### 1.7 (2022.10.04)
 
@@ -49,17 +53,17 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-utilities/.
 
 ### 1.6 (2022.10.03)
 
-- Test up to WP 6.0
+- Test up to WordPress 6.0
 - Remove Elementor ads
 - Remove Smush ads
 
 ### 1.5 (2021.12.31)
 
-- Test up to WP 5.8.
+- Test up to WordPress 5.8.
 
 ### 1.4 (2021.01.08)
 
-- Test up to WP 5.6
+- Test up to WordPress 5.6
 - Remove Yoast SEO upsell ads
 
 ### 1.3 (2019.11.29)
@@ -68,7 +72,7 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-utilities/.
 
 ### 1.2 (2019.11.19)
 
-- Test up to WP 5.3
+- Test up to WordPress 5.3
 
 ### 1.1 (2019.06.28)
 

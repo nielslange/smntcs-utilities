@@ -17,7 +17,7 @@ A collection of custom snippets to hide upsell ads within WP Admin.
 
 == Installation ==
 
-1. Upload `smntcs-utilitiessmntcs-utilities` to the `/wp-content/plugins/` directory.
+1. Upload `smntcs-utilities` to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the `Plugins` menu in WordPress.
 
 == Purpose ==

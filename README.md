@@ -31,6 +31,10 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-utilities/.
 
 ## Changelog
 
+### 2.3 (2026.08.14)
+
+- Test up to WordPress 7.0
+
 ### 2.2 (2025.03.21)
 
 - Test up to WordPress 6.8

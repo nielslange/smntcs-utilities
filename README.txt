@@ -2,8 +2,8 @@
 
 Contributors:       nielslange
 Tags:               Utilities, remove ads, remove bloat, unbloater
-Stable tag:         2.2
-Tested up to:       6.8
+Stable tag:         2.3
+Tested up to:       7.0
 Requires PHP:       7.4
 Requires at least:  4.6
 License:            GPL v2 or later
@@ -29,6 +29,10 @@ A collection of custom snippets to hide upsell ads within WP Admin.
 - Remove Yoast SEO ads
 
 == Changelog ==
+
+= 2.3 (2026.08.14) =
+
+- Test up to WordPress 7.0
 
 = 2.2 (2025.03.21) =
 

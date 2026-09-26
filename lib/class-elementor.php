@@ -25,7 +25,6 @@ class SMNTCS_Elementor implements Plugin {
 
 		add_action( 'admin_init', array( $this, 'remove_submenus' ), 999 );
 		add_action( 'wp_dashboard_setup', array( $this, 'remove_dashboard' ) );
-
 	}
 
 	/**

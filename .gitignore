@@ -5,3 +5,7 @@ phplint.cache
 .phplint.cache
 .DS_Store
 /.phplint.cache
+cypress/screenshots
+cypress/videos
+playwright-report
+test-results

@@ -1,19 +1,29 @@
 === SMNTCS Utilities ===
 
 Contributors:       nielslange
-Tags:               Utilities, remove ads, remove bloat, unbloater
-Stable tag:         2.3
-Tested up to:       7.0
-Requires PHP:       7.4
+Tags:               remove ads, admin notices, upsell, clean admin, bloat
 Requires at least:  4.6
+Tested up to:       7.1
+Requires PHP:       7.4
+Stable tag:         2.4
 License:            GPL v2 or later
 License URI:        https://www.gnu.org/licenses/gpl-2.0.html
 
-A collection of custom snippets to hide upsell ads within WP Admin.
+Hides upsell ads and notices that popular plugins add to the WordPress admin area.
 
 == Description ==
 
-A collection of custom snippets to hide upsell ads within WP Admin.
+Many popular plugins show upgrade offers and ads inside the WordPress admin area. SMNTCS Utilities hides them, so your dashboard stays clean.
+
+It currently hides the ads of:
+
+* All-in-One WP Migration
+* Elementor
+* Jetpack
+* Smush
+* Yoast SEO
+
+There are no settings. Activate the plugin and the ads are gone.
 
 == Installation ==
 
@@ -28,7 +38,22 @@ A collection of custom snippets to hide upsell ads within WP Admin.
 - Remove Smush ads
 - Remove Yoast SEO ads
 
+== Frequently Asked Questions ==
+
+= Can you remove the ads that Disqus shows in comments? =
+
+No. Disqus shows its ads inside its own comment frame, which a WordPress plugin cannot change. Removing them would also break the Disqus terms of service. Disqus offers an ad-free plan instead.
+
+= Can you remove the ads that Disqus shows in comments? =
+
+No. Disqus shows its ads inside its own comment frame, which a WordPress plugin cannot change. Removing them would also break the Disqus terms of service. Disqus offers an ad-free plan instead.
+
 == Changelog ==
+
+= 2.4 (2026.09.26) =
+
+- Test up to WordPress 7.1
+- Update development dependencies and GitHub Actions
 
 = 2.3 (2026.08.14) =
 

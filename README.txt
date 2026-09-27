@@ -5,7 +5,7 @@ Tags:               remove ads, admin notices, upsell, clean admin, bloat
 Requires at least:  4.6
 Tested up to:       7.1
 Requires PHP:       7.4
-Stable tag:         2.4
+Stable tag:         2.5
 License:            GPL v2 or later
 License URI:        https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,25 +30,18 @@ There are no settings. Activate the plugin and the ads are gone.
 1. Upload `smntcs-utilities` to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the `Plugins` menu in WordPress.
 
-== Purpose ==
-
-- Remove All in One WP Migration ads
-- Remove Elementor ads
-- Remove Jetpack ads
-- Remove Smush ads
-- Remove Yoast SEO ads
-
 == Frequently Asked Questions ==
 
 = Can you remove the ads that Disqus shows in comments? =
 
 No. Disqus shows its ads inside its own comment frame, which a WordPress plugin cannot change. Removing them would also break the Disqus terms of service. Disqus offers an ad-free plan instead.
 
-= Can you remove the ads that Disqus shows in comments? =
-
-No. Disqus shows its ads inside its own comment frame, which a WordPress plugin cannot change. Removing them would also break the Disqus terms of service. Disqus offers an ad-free plan instead.
-
 == Changelog ==
+
+= 2.5 (2026.09.27) =
+
+- Remove duplicated FAQ entries from the readme
+- Remove the Purpose section, which repeated the description
 
 = 2.4 (2026.09.26) =
 
